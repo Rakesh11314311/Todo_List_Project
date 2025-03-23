@@ -8,6 +8,7 @@ def add_task(task):
 def list_tasks():
     if not tasks:
         print("No tasks available.")
+	return
     else:
         for idx, task in enumerate(tasks, start=1):
             print(f'{idx}. {task}')
